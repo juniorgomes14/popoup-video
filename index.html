@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest\css\style.css">
+
+    <title>App</title>
+</head>
+
+<body>
+   
+
+        <div class="header">
+            <h1 class="color">Menu lista de Animes</h1>
+            <input type="text" placeholder="Pesquisa.." id="input"><!--the input space -->
+            <button type="submit" class="btn color">Search</button><!--the button to search something you might like-->
+        </div>
+
+
+    <div id="container"><!--put in container to organized in row ,it's the manin container-->
+
+            <div class="container flex"> <!--put in the first container to organized it in row -->
+
+              <div><!--this division helps contain the content that gonna apear and the other that gonna apear when they click into this div-->
+                    <div class="div" id="soloDiv"><!-- organized it in division to be able to change as you want -->
+                        <img src="assest\imagem\4305090653ee4239dd0d797f1a4a6bdf.avif" alt="" width="300px" height="300px"><!--the origin where the image is coming from-->
+                        <h1 class="color">Solo Leveling</h1>
+                        <p class="color"> is a 2018 action thriller film[3] directed by Lin Oeding and written by Mike Nilon
+                            and Thomas Pa'a Sibbett. The film stars Jason Momoa as Joe Braven, with Garret Dillahunt,
+                            Stephen Lang, Jill Wagner, and Brendan Fletcher. </p>
+                    </div>
+
+                    <div id="soloModal" class="modal"><!--it is the modal content (when you click the division top you see this content -->
+                        <div class="modal-content">
+                            
+                            <span class="close">&times;</span>
+                            <video src="assest\video\Solo Leveling Season 2 - OFFICIAL TEASER TRAILER.mp4" class="video" controls muted ></video><!--the origin where the video is coming from-->
+                        </div>
+                    </div>
+               </div>
+              
+
+                <div>
+                    <div class="div" id="slimeDiv" onclick="slime()"><!--dvision with a event onclick -->
+                        <img src="assest\imagem\MV5BM2M2NDIzOTItZDA1Yy00M2Q4LTk3ZjctZjZmZjUyZWMxM2YyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="" width="300px" height="300px">
+                        <h1 class="color">Tensei shitara Slime Datta Ken</h1>
+                        <p class="color"> is a 2018 action thriller film[3] directed by Lin Oeding and written by Mike Nilon
+                        and Thomas Pa'a Sibbett. The film stars Jason Momoa as Joe Braven, with Garret Dillahunt,
+                        Stephen Lang, Jill Wagner, and Brendan Fletcher. </p>
+                    </div>
+
+                    <div id="slimeModal" class="modal">
+                        <div class="modal-content">
+                        
+                         <span class="close">&times;</span>
+                            <video src="assest\video\Tensei shitara Slime Datta Ken Season 2 Part 2「AMV」Immortals ᴴᴰ.mp4" class="video" controls muted ></video>
+                        </div>
+                  
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="div" id="mushoDiv" onclick="musho()">
+                        <img src="assest\imagem\MV5BMGM2MzA5YzYtODc0Ni00ZjU4LWI4ZmUtZGJjNGU0ODY1MGJkXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="" width="300px" height="300px">
+                        <h1 class="color"> Mushoku Tensei</h1>
+                        <p class="color"> is a 2018 action thriller film[3] directed by Lin Oeding and written by Mike Nilon
+                        and Thomas Pa'a Sibbett. The film stars Jason Momoa as Joe Braven, with Garret Dillahunt,
+                        Stephen Lang, Jill Wagner, and Brendan Fletcher. </p>
+                    </div>
+                    <div id="mushoModal" class="modal">
+                        <div class="modal-content">
+                        
+                            <span class="close">&times;</span>
+                            <video src="assest\video\Rudeus Damages Orsted hand _ Mushoku Tensei Episode 21 Turning point 2.mp4" class="video" controls muted ></video>
+                        </div>
+                  
+                    </div>
+                </div>  
+
+            
+        </div>             
+
+         
+        <div class="container-1"><!--it's the second container in conatiner main , it help to organizes the division abose -->
+
+            <div>
+                <div class="div" id="mashleDiv" onclick="mashle()">
+                    <img src="assest\imagem\MV5BZDE0ZTRhMTQtMTIzNC00NjY4LTllMmEtYjY4Y2ZlZmZlODU0XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UX1000_.jpg" alt="" width="300px" height="300px">
+                    <h1 class="color"> Mashle</h1>
+                    <p class="color"> is a 2018 action thriller film[3] directed by Lin Oeding and written by Mike Nilon
+                        and Thomas Pa'a Sibbett. The film stars Jason Momoa as Joe Braven, with Garret Dillahunt,
+                        Stephen Lang, Jill Wagner, and Brendan Fletcher. </p>
+                </div>
+                    <div id="mashleModal" class="modal">
+                        <div class="modal-content">
+                            
+                        <span class="close">&times;</span>
+                        <video src="assest\video\MASHLE- MAGIC AND MUSCLES - TRAILER OFICIAL.mp4" class="video" controls muted ></video>
+                    </div>
+                </div>
+            </div>   
+            <div>
+                <div class="div" id="tokyoDiv" onclick="tokyo()">
+                    <img src="assest\imagem\Season_two_blu-ray_box_cover.webp" alt="" width="300px" height="300px">
+                    <h1 class="color"> Tokyo Ghoul </h1>
+                    <p class="color"> is a 2018 action thriller film[3] directed by Lin Oeding and written by Mike Nilon
+                    and Thomas Pa'a Sibbett. The film stars Jason Momoa as Joe Braven, with Garret Dillahunt,
+                    Stephen Lang, Jill Wagner, and Brendan Fletcher. </p>
+                </div>
+                <div id="tokyoModal" class="modal">
+                    <div class="modal-content">
+                    
+                        <span class="close">&times;</span>
+                        <video src="assest\video\Tokyo Ghoul - Season 1 - Official Uncut Trailer.mp4" class="video" controls muted ></video>
+                    </div>
+                </div>
+            </div>
+          
+            <div>
+              
+                <div class="div" id="punchDiv" onclick="punch()">
+                    <img src="assest\imagem\images (1).jpg" alt="" width="300px" height="300px">
+                    <h1 class="color"> One Punch </h1>
+                    <p class="color"> is a 2018 action thriller film[3] directed by Lin Oeding and written by Mike Nilon
+                     and Thomas Pa'a Sibbett. The film stars Jason Momoa as Joe Braven, with Garret Dillahunt,
+                    Stephen Lang, Jill Wagner, and Brendan Fletcher. </p>
+                </div>
+                <div id="punchModal" class="modal">
+                    <div class="modal-content">
+                
+                        <span class="close">&times;</span>
+                        <video src="assest\video\_One Punch Man Official Trailer.mp4" class="video" controls muted ></video>
+                    </div>
+            </div>
+    </div> 
+       
+
+    
+
+
+
+            
+
+
+    
+</body>
+<script src="./assest/js/script.js"></script>
+
+</html>
